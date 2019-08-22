@@ -1,6 +1,5 @@
 
 $dependencies = (
-    powershell
     boxstarter
     firefox
     vscode
@@ -13,6 +12,7 @@ $dependencies = (
     autohotkey.portable
     git 
     nodejs
+    golang
     nxlog
     curl
     paint.net 
@@ -20,6 +20,7 @@ $dependencies = (
     chromium
     thunderbird
     cygwin 
+    qbittorrent
 
 );
 #putty.install

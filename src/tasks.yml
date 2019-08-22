@@ -1,0 +1,22 @@
+
+version: 1.0
+
+environment:
+    -
+
+
+# commands of the pkgmanager
+pkgmanager: 
+    chocolatey
+    commands:
+        install: choco install
+
+
+# pkgname to pass to the default pkg manager
+install:
+    - firefox:
+        - firefox
+    - VS Code:
+        - vscode
+    - notepad++:
+        - notepadplusplus.install  

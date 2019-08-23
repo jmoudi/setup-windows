@@ -36,10 +36,10 @@ $media = @(
 );
 
 $gaming = @(
-    "steam",
+    "steam"
 );
 $editing = @(
-    "paint.net",
+    "paint.net"
 );
 
 $dependencies = $general + $utilities + $developer + $media + $gaming + $editing;
@@ -75,7 +75,7 @@ function updateEnvPath(){
     $appExcl = @("*Windows*","Common Files", "*NVIDIA*", "Internet Explorer", "Vulkan*","*Microsoft*");
     $appDirs = Get-ChildItem -Path $appRoots -Directory -Exclude $appExcl;
     foreach ($app in $appDirs){
-        addAppToPath $app.FullName
+        addAppToPath $app.FullName;
     }
 };
 function setupAllDeps(){

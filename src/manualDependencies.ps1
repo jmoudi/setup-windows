@@ -1,5 +1,5 @@
 
 $deps = (
-    "ableton",
-    "guildwars2"
+    @{"Name"="ableton"},
+    @{"Name"="guildwars2"}
 )

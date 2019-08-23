@@ -55,20 +55,38 @@ function installDeps($deplist){
         installDependency $dep;
     }
 };
-function logUpdate(){
-
+function hasExe($appDir){
+    $binDir = Get-ChildItem -Path $appDir -File -Depth 1 -Include @("*.exe","*.msi");
+    return $binDir
 };
-function addToPath(){
-    $appDir = "C:\Program Files";
-    $apps = ls $appDir;
-    foreach ($app in $apps){
-        echo "App: $app";
+function hasBin($appDir){
+    $binDir = Get-ChildItem -Path $appDir -Directory -Depth 3 -Include @("bin/*");
+    return $binDir
+};
+function addAppToPath($appPath){
+    echo "App: $appPath";
+    $res = hasExe $appPath;
+    echo "hasExe: $res";
+    $res2 = hasBin $appPath;
+    echo "hasBin: $res2";
+};
+function updateEnvPath(){
+    $appRoots = @("C:\Program Files","C:\Program Files (x86)");
+    $appExcl = @("*Windows*","Common Files", "*NVIDIA*", "Internet Explorer", "Vulkan*","*Microsoft*");
+    $appDirs = Get-ChildItem -Path $appRoots -Directory -Exclude $appExcl;
+    foreach ($app in $appDirs){
+        addAppToPath $app.FullName
     }
 };
 function setupAllDeps(){
     echo "All dependencies:\n$dependencies";
-    #installDeps $dependencies;
+    installDeps $dependencies;
 }; 
 function main(){
     setupAllDeps;
+};
+
+
+function logUpdate(){
+
 };

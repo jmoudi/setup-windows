@@ -1,9 +1,4 @@
-function mm(){
-    $matches = Get-ChildItem -Path "D:\G3D G2D\Videos G3D" -File -Depth 8 -Include @("*арафан*");
-    foreach ($m in $matches){
-        Move-Item -Path "$m" -Destination "D:\G3D G2D\Videos G3D\Sarafan"
-    }
-} 
+ 
  
 
 function loadYaml($path){
@@ -114,3 +109,16 @@ Resolve-Path -Path "\\INTERNETBOX-NAS/hdd_toshiba/Files/Configs/.config/git/conf
 Resolve-Path -Path "\\INTERNETBOX-NAS/hdd_toshiba/Files/Configs/.config/git/config" | code $_.Path
 
 ; code $g.Path
+
+Resolve-Path -Path "Control Panel\All Control Panel Items\Power Options"
+Get-ChildItem "HKCU\Control Panel"
+
+Get-ChildItem -ItemProperty -Path REGISTRY::
+
+
+Export-ModuleMember -Function * -Alias *
+
+
+
+
+$PSModuleAutoLoadingPreference = "All";

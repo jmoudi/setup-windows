@@ -1,4 +1,8 @@
 
+function ctrlPnl(){
+    Get-ChildItem -Path "REGISTRY::HKCU\Control Panel"
+}
+
 function descendDir($appDir){
     # search for .exe executables in ./ and ./*/
     # only works in powershell-core

@@ -40,8 +40,12 @@ function loadJson(){
    return $associations.values
    
 }
-
-function createDefaultAssociations($associations){
+function setAssociation($name, $pattern){
+    $matches = Get-Command -Name "*$pattern*";
+    $src = $matches[0].Source;
+    Set-Alias $name -Value $src -Scope global;
+}
+function createDefaultAssociationsXml($associations){
     [System.Collections.ArrayList]$outp = @();
     #[System.Collections.ArrayList<Association>]$outp = @();
     foreach ($asc in $associations){ #echo $asc.ToString()

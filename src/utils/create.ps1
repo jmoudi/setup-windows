@@ -1,0 +1,4 @@
+function createHotkeys(){
+    #xmodmap ~/.Xmodmap
+} 
+

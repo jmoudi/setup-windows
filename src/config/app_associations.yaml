@@ -1,4 +1,6 @@
-[
+{
+    "type": "DefaultAssociations",
+    "values":[
     {
         "Identifier": ".yml",
         "ProgId": "Applications\\Code.exe",
@@ -14,4 +16,5 @@
         "ProgId": "Applications\\Honeyview.exe",
         "ApplicationName":"Honeyview"
     }
-]
+    ]
+}

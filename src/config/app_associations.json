@@ -1,0 +1,17 @@
+[
+    {
+        "Identifier": ".yml",
+        "ProgId": "Applications\\Code.exe",
+        "ApplicationName":"Visual Studio Code"
+    },
+    {
+        "Identifier": ".json",
+        "ProgId": "Applications\\Code.exe",
+        "ApplicationName":"Visual Studio Code"
+    },
+    {
+        "Identifier": ".jpg",
+        "ProgId": "Applications\\Honeyview.exe",
+        "ApplicationName":"Honeyview"
+    }
+]

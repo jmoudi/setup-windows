@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DefaultAssociations>
+  <Association Identifier=".7z" ProgId="Applications\7zG.exe" ApplicationName="7-Zip GUI" />
+  <Association Identifier=".bmp" ProgId="Honeyview.bmp" ApplicationName="Honeyview" />
+  <Association Identifier=".cr2" ProgId="Honeyview.cr2" ApplicationName="Honeyview" />
+  <Association Identifier=".crw" ProgId="Honeyview.crw" ApplicationName="Honeyview" />
+  <Association Identifier=".epub" ProgId="AppXvepbp3z66accmsd0x877zbbxjctkpr6t" ApplicationName="Microsoft Edge" />
+  <Association Identifier=".flac" ProgId="foobar2000.FLAC" ApplicationName="foobar2000" />
+  <Association Identifier=".gif" ProgId="Honeyview.gif" ApplicationName="Honeyview" />
+  <Association Identifier=".htm" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".html" ProgId="FirefoxHTML-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier=".jpeg" ProgId="Honeyview.jpeg" ApplicationName="Honeyview" />
+  <Association Identifier=".jpg" ProgId="Honeyview.jpg" ApplicationName="Honeyview" />
+  <Association Identifier=".jxr" ProgId="Honeyview.jxr" ApplicationName="Honeyview" />
+  <Association Identifier=".md" ProgId="Applications\Code.exe" ApplicationName="Visual Studio Code" />
+  <Association Identifier=".mkv" ProgId="io.mpv.mkv" ApplicationName="mpv" />
+  <Association Identifier=".mp4" ProgId="io.mpv.mpeg4" ApplicationName="mpv" />
+  <Association Identifier=".pdf" ProgId="FoxitReader.Document" ApplicationName="Foxit Reader 9.6" />
+  <Association Identifier=".png" ProgId="Honeyview.png" ApplicationName="Honeyview" />
+  <Association Identifier=".psd" ProgId="Honeyview.psd" ApplicationName="Honeyview" />
+  <Association Identifier=".svg" ProgId="Applications\Code.exe" ApplicationName="Honeyview" />
+  <Association Identifier=".tif" ProgId="Honeyview.tif" ApplicationName="Honeyview" />
+  <Association Identifier=".tiff" ProgId="Honeyview.tiff" ApplicationName="Honeyview" />
+  <Association Identifier=".txt" ProgId="txtfile" ApplicationName="Notepad" />
+  <Association Identifier=".webp" ProgId="Honeyview.webp" ApplicationName="Honeyview" />
+  <Association Identifier="http" ProgId="FirefoxURL-308046B0AF4A39CB" ApplicationName="Firefox" />
+  <Association Identifier="https" ProgId="FirefoxURL-308046B0AF4A39CB" ApplicationName="Firefox" />
+</DefaultAssociations>
